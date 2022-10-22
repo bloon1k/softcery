@@ -4,7 +4,6 @@
     "description": "",
     "main": "index.js",
     "scripts": {
-        "test": "echo \"Error: no test specified\" && exit 1",
         "start": "webpack serve --config webpack/webpack.config.js --env env=dev",
         "build": "webpack --config webpack/webpack.config.js --env env=prod",
         "lint": "eslint --fix \"./src/**/*.{js,jsx,ts,tsx}\"",
@@ -14,14 +13,19 @@
     "author": "",
     "license": "ISC",
     "dependencies": {
+        "@reduxjs/toolkit": "^1.8.6",
         "react": "^18.2.0",
-        "react-dom": "^18.2.0"
+        "react-dom": "^18.2.0",
+        "react-redux": "^8.0.4",
+        "react-router-dom": "^6.4.2",
+        "socket.io-client": "^4.5.3"
     },
     "devDependencies": {
         "@babel/core": "^7.19.3",
         "@babel/preset-env": "^7.19.3",
         "@babel/preset-react": "^7.18.6",
         "@babel/preset-typescript": "^7.18.6",
+        "@feature-sliced/eslint-config": "^0.1.0-beta.6",
         "@pmmmwh/react-refresh-webpack-plugin": "^0.5.7",
         "@types/react": "^18.0.21",
         "@types/react-dom": "^18.0.6",

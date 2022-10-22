@@ -1,0 +1,19 @@
+@use '../../app/index.scss';
+
+.element {
+  width: 15%;
+  aspect-ratio: 1;
+  background: 0;
+  border: 0;
+
+  &__image {
+    width: 100%;
+    height: 100%;
+    border-radius: 1em;
+    border: 3px solid index.$blue;
+
+    &:hover {
+      border-color: index.$red;
+    }
+  }
+}

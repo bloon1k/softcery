@@ -1,0 +1,36 @@
+@use '../../app/index';
+
+.login {
+  padding: 3em;
+  border-radius: 1em;
+  background: index.$font;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 10px;
+
+  &__title {
+    font-size: 1.6em;
+    text-align: center;
+  }
+
+  &__button {
+    @include index.button;
+    width: 80%;
+    height: 40px;
+  }
+
+  &__input {
+    width: 80%;
+    height: 40px;
+    padding: .5em;
+    border: 2px solid index.$blue;
+    border-radius: .8em;
+    transition: .2s all;
+
+    &:hover {
+      border: 2px solid index.$green;
+    }
+  }
+}

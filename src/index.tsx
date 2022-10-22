@@ -1,7 +1,7 @@
 import React from 'react'
 import { createRoot } from 'react-dom/client'
-// Children
-import App from './App'
+import './app/index.scss'
+import App from './app/App'
 
 const container = document.getElementById('root') as HTMLElement
 const root = createRoot(container)

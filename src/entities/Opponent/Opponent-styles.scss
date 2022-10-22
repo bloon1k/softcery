@@ -1,0 +1,12 @@
+@use '../../app/styles/index';
+
+.opponent {
+  width: 40%;
+  height: 100px;
+  background: index.$green;
+  border-radius: 1em;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}

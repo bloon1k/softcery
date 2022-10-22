@@ -1,0 +1,13 @@
+@use './colors';
+
+@mixin button {
+  border: 2px solid colors.$blue;
+  border-radius: .8em;
+  background: 0;
+  transition: .2s all;
+
+  &:hover {
+    background: colors.$blue;
+    color: colors.$font;
+  }
+}
